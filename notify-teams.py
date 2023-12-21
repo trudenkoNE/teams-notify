@@ -6,7 +6,7 @@ import sys
 
 
 def send_message(url, subject, output, long_message=None):
-    teams_message = pymstems.connectorcard(url)
+    teams_message = pymsteams.connectorcard(url)
     teams_message.title(subject)
 
     if long_message:
@@ -27,7 +27,7 @@ def main(args):
     output = args.get("output")
     long_message = args.get("long_message")
 
-    send_message(url, subject, output, long)
+    send_message(url, subject, output, long_message)
 
 
 if __name__ == "__main__":
