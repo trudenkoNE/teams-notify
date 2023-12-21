@@ -33,7 +33,7 @@ def main(args):
 if __name__ == "__main__":
     args = {}
 
-    parser = argparse.ArguentParser()
+    parser = argparse.ArgumentParser()
     parser.add_argument("subject", action="store", help="subject")
     parser.add_argument("output", action="store", help="output of the check")
     parser.add_argument("url", action="store", help="teams webhook")
